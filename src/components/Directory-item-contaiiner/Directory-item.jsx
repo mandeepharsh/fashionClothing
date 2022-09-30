@@ -17,5 +17,5 @@ const NavigateHandler = () => navigate(route)
           </div>
         </div>)
 }
-
+ 
 export default DirectoryItem
