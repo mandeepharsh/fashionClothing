@@ -2,6 +2,7 @@ import { createContext , useState,useEffect} from "react";
 import { getCatogoriesAndDocuments } from "../utils/firebase/firebase.js";
 
 
+
 export const CateogoryContext = createContext(
 {setCateogory:{}
 });

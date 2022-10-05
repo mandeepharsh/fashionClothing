@@ -1,13 +1,16 @@
-import { useContext,Fragment } from "react";
-import { CateogoryContext } from "../../contexts/cateogory.context";
+import { Fragment } from "react";
+import { useSelector } from "react-redux";
+
+import { categorySelector } from "../../store/cateogory/category.selctor";
 
 import PrievewCatagories from "../../components/preview-catogories/preview-catogories";
 
 
 
 
+
 const CatagoriesPreview =()=>{
-  const {cateogory} = useContext(CateogoryContext);
+  const cateogory = useSelector(categorySelector);
     return(
        <Fragment>
        {Object.keys(cateogory).map((title )=>{

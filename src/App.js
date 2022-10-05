@@ -12,6 +12,7 @@ import Checkout from "./routes/checkout/checkout.component";
 
 
 
+
 const App = () => {
   const dispatch = useDispatch()
   useEffect(() =>{
@@ -21,8 +22,12 @@ const App = () => {
        }
         dispatch(setCurrentUser(user))})
     return unsuscribe;
-},[]
+},[dispatch]
 )
+
+
+
+
   return (
     <Routes>
     <Route path="/" element={<Navaigation />}>
