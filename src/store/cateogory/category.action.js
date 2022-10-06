@@ -3,9 +3,9 @@ import {CATEGORIES_ACTION_TYPE} from "../cateogory/category.type"
 
 
 
-export const setCateogory = (categoryMap) => {
+export const setCateogory = (categoryArray) => {
 return(
-    createAction(CATEGORIES_ACTION_TYPE.SET_CATEGORIES_MAP , categoryMap)
+    createAction(CATEGORIES_ACTION_TYPE.SET_CATEGORIES , categoryArray)
 )
 }
 
