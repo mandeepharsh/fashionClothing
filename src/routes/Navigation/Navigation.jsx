@@ -22,7 +22,7 @@ const Navaigation = () =>{
         <Link className = 'nav-link' to = "/shop"  >
           SHOP
         </Link>
-        {currentUser? (<span className="nav-link" onClick={signOutUser }>Sign Out</span>):(<Link className = 'nav-link' to = "/auth"  >
+        {currentUser? (<span className="nav-link" onClick={signOutUser }>SIGN OUT</span>):(<Link className = 'nav-link' to = "/auth"  >
           SIGN IN
         </Link>)}
         <Cart/>
