@@ -1,4 +1,4 @@
-import { Fragment ,useContext} from "react";
+import { Fragment } from "react";
 import { useSelector } from "react-redux";
 import {userSelector} from "../../store/user/user.selector";
 import { selectIsCartOpen } from "../../store/cart/cart.selector";

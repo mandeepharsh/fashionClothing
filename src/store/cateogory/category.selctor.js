@@ -11,3 +11,9 @@ export const categorySelector = createSelector([selectCAtegories],
     acc[title.toLowerCase()] = items;
     return acc;
  },{}))
+
+
+ export const selectCategoriesIsLoading = createSelector(
+    [selecetCategoryReducer],
+    (categorieslice) => categorieslice.isLoading
+ )
