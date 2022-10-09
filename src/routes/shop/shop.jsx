@@ -10,7 +10,7 @@ const Shop =()=>{
   useEffect(()=>{
     dispatch(fetchCatagoriesAsync())
 
-},[])
+},[dispatch])
 
     return(
 
